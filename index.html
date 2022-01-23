@@ -6,60 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+    <link rel="stylesheet" href="style/index.css">
+
 </head>
 
 <body>
     <header>
-        <h1>ToDo</h1>
-          <img src="" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="about.html">about</a></li>
-                <li><a href="http://">issus</a></li>
-                <li><a href="http://">forms</a></li>
-                <li><a href="http://">contact us</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    <main>
-        
 
-        <table>
+        <img src="assets\icon.webp" class="hlogo" alt="logo">
+        <nav class="topnav">
+            <a href="about.html">about</a>
+            <a href="http://">issus</a>
+            <a href="http://">forms</a>
+            <a href="http://">contact us</a>
+
+        </nav>
+        <h1 class="htodo">ToDo List</h1>
+    </header>
+    <main class ="mm">
+
+
+        <table class="tmain">
             <tr>
                 <th>task</th>
                 <th>status</th>
             </tr>
             <tr>
-                <td>task1</td>
-                <td>done</td>
+                <td> <label class="ltd" for="vehicle1">Learn JS</label>
+                    <form action="/action_page.php">
+                        <input class="itd" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </td>
+                <td class="done"><svg width="400" height="110">
+                    <rect width="300" height="100" style="fill:rgb(24, 161, 11);stroke-width:3;stroke:rgb(0,0,0)" />
+                
+                  </svg>
+                   </td>
             </tr>
             <tr>
-                <td>taske2</td>
-                <td>done</td>
+                <td><label class="ltd" for="vehicle1">Creat HTML page</label>
+                    <form action="/action_page.php">
+                        <input class="itd" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </td>
+               <td class="done"><svg width="400" height="110">
+                    <rect width="300" height="100" style="fill:rgb(219, 22, 15);stroke-width:3;stroke:rgb(0,0,0)" />
+                
+                  </svg></td>
             </tr>
             <tr>
-                <td>task4</td>
-                <td>not yet</td>
+                <td><label class="ltd" for="vehicle1">Walk the dog </label>
+                    <form action="/action_page.php">
+                        <input class="itd" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </td>
+                 <td class="done"><svg width="400" height="110">
+                    <rect width="300" height="100" style="fill:rgb(219, 22, 15);stroke-width:3;stroke:rgb(0,0,0)" />
+                
+                  </svg></td>
+            </tr>
+            <tr>
+                <td><label class="ltd" for="vehicle1">Watch the match</label>
+                    <form action="/action_page.php">
+                        <input class="itd" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </td>
+            <td class="done"><svg width="400" height="110">
+                    <rect width="300" height="100" style="fill:rgb(219, 22, 15);stroke-width:3;stroke:rgb(0,0,0)" />
+                
+                  </svg></td>
             </tr>
         </table>
     </main>
-    <footer>
-        <div>
+    <br>
+    <br>
+    <footer class="footer">
+        <div id="p">
             <p>contact us:
                 <br>
                 0777777777
-            </p><br>
-            <a href="http://facebook.com">facebook page</a>
+                <br>
+                <a href="http://facebook.com">facebook page</a>
+            </p>
         </div>
-        <div>
+        <div id="cop">
             2022 All rights reserved &copy;
         </div>
-        <div>
-            <img src="" alt="logo">
-        </div>
+
 
     </footer>
-</body>
+    <script src="js\app.js">
 
+    </script>
+</body>
+ 
 </html>
