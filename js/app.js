@@ -34,53 +34,56 @@ if (confirm(conf) == true) {
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
 
-// var q1;
-// var q2;
-// var q3;
-// var Rarray = new array();
+var q1;
+var q2;
+var q3;
+var Rarray = [];
 
 
-// function AskUser(q1) {
-//     let q1 = prompt("Do you love Mansaf?");
-//     IsEmpty(q1);
-//     return q1;
-// }
-// function IsEmpty(q1) {
-//     if (!EmptyEnter(q1)) {
-//         alert = "Invalid";
-//     }
-//     if (!EmptyEnter(q1)) {
-//         alert = "Invalid";
-//     }
-//     if (!EmptyEnter(q1)) {
-//         alert = "Invalid";
-//     }
-// }
 
-// function EmptyEnter(p1) {
-//     if (p1 != null) {
-//         return true;
-//         // document.getElementById("demo").innerHTML =
-//         // "Hello " + person + "! How are you today?";
-//     }
-//     else return false;
-// }
+function IsEmpty(q1) {
+    if (!EmptyEnter(q1)) {
+        alert = "Invalid";
+    }
+    if (!EmptyEnter(q1)) {
+        alert = "Invalid";
+    }
+    if (!EmptyEnter(q1)) {
+        alert = "Invalid";
+    }
+}function AskUser(q1,str) {
+   
+    q1 = prompt(str);
+     IsEmpty(q1);
+    
+    return q1;
+}
 
-// function PutResultInArray(p1, p2, p3) {
-//     Rarray = [p1, p2, p3];
-// }
+function EmptyEnter(p1) {
+    if (p1 != null) {
+        return true;
+        // document.getElementById("demo").innerHTML =
+        // "Hello " + person + "! How are you today?";
+    }
+    else return false;
+}
 
-// function PrintArray() {
-// for(var x=0;x<=3;x++)
-// {
-//     console.log(Rarray[x]);
-// }
-// }
+function PutResultInArray(p1, p2, p3) {
+   
+    Rarray = [p1, p2, p3];
+}
 
-// q1=AskUser(q1);
-// q2=AskUser(q2);
-// q3=AskUser(q3);
-// PutResultInArray(p1, p2, p3);
-// PrintArray();
+function PrintArray() {
+for(var x=0;x<=3;x++)
+{
+    console.log(Rarray[x]);
+}
+}
+
+q1=AskUser(q1,"Do you love Mansaf?");
+q2=AskUser(q2,"Do you like Java?");
+q3=AskUser(q3,"Do you have pc? ");
+PutResultInArray(q1, q2,q3);
+PrintArray();
